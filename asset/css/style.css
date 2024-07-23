@@ -1,0 +1,18 @@
+@font-face {
+    font-family: Kantumruy;
+    src: url(/asset/plugin/font/KantumruyPro-VariableFont_wght.ttf);
+}
+body{
+    font-family:Kantumruy, sans-serif;
+}
+
+input,
+textarea,
+button{
+    font-family: Kantumruy, sans-serif;;
+}
+
+a {
+    text-decoration: none;
+}
+
