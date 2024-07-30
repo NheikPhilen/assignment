@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail</title>
+    <link rel="stylesheet" href="asset/css/bootstrap.css">
+    <link rel="stylesheet" href="asset/css/style.css">
+    <link rel="stylesheet" href="asset/css/hugeicon.css">
+    <link rel="stylesheet" href="asset/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/css/lightgallery-bundle.min.css">
+    <style>
+        body {
+            background-color: #f8fafd;
+        }
+
+        .home-price input,
+        .interest input,
+        .month-qty input,
+        .down-pay input,
+        .total-money input,
+        .total-interest input,
+        .monthly-pay input {
+            border-right: none;
+        }
+
+        input:hover,
+        input:active,
+        input:focus {
+            box-shadow: none !important;
+        }
+
+        .seller-profile {
+            width: 70px;
+        }
+
+        .active-note {
+            color: greenyellow;
+        }
+
+        .location {
+            background-color: #f09965;
+            padding: 5px 6px;
+        }
+
+        .see-more {
+            cursor: pointer;
+        }
+
+        .see-more:hover .see-more-button {
+            opacity: 1;
+        }
+
+        .see-more-button {
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #0000005a;
+            z-index: 99;
+            opacity: 0;
+            transition: 0.6s;
+        }
+
+        #lightgallery2 .col-6 img {
+            max-height: 200px !important;
+        }
+
+        .rate img {
+            filter: brightness(0) saturate(100%) invert(60%) sepia(60%) saturate(413%) hue-rotate(337deg) brightness(101%) contrast(88%);
+        }
+
+        .eye {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <section class="detail-page">
+            <div class="container">
+                <div class="detail-img">
+                    <div class="row my-4 flex-wrap row-gap-4">
+                        <!-- card1 -->
+                        <div class="col-12 col-lg-7 pe-3" id="lightgallery1">
+                            <div class="col-12 rounded-3 overflow-hidden" data-src="asset/image/detail-2.jpg">
+                                <img src="asset/image/detail-2.jpg" alt="" class="w-100" style="max-height: 360px;">
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-5">
+                            <div class="row flex-wrap row-gap-4" id="lightgallery2">
+                                <div class="col-6" data-src="asset/image/detail-1.jpg">
+                                    <div class="card rounded-3 overflow-hidden">
+                                        <img src="asset/image/detail-1.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-6" data-src="asset/image/detail-5.jpg">
+                                    <div class="card rounded-3 overflow-hidden">
+                                        <img src="asset/image/detail-5.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-6" data-src="asset/image/detail-4.jpg">
+                                    <div class="card rounded-3 overflow-hidden">
+                                        <img src="asset/image/detail-4.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-6 see-more position-relative overflow-hidden"
+                                    data-src="asset/image/detail-3.jpg">
+                                    <div class="card rounded-3 overflow-hidden">
+                                        <div
+                                            class="see-more-button position-absolute d-flex justify-content-center align-items-center">
+                                            <button type="button" class="btn btn-warning text-white">មើលបន្ថែម<svg
+                                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18"
+                                                    height="18" color="#ffffff" fill="none" class="ms-1">
+                                                    <path d="M12 8V16M16 12L8 12" stroke="currentColor"
+                                                        stroke-width="1.5" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                    <path
+                                                        d="M2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2"
+                                                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                    <path
+                                                        d="M2.5 8.5C2.86239 7.67056 3.3189 6.89166 3.85601 6.17677M6.17681 3.85598C6.89168 3.31888 7.67058 2.86239 8.5 2.5"
+                                                        stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                                        stroke-linejoin="round" />
+                                                </svg></button>
+                                        </div>
+                                        <img src="asset/image/detail-3.jpg" alt="">
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <section class="detail-info mb-4">
+            <div class="container px-4 px-lg-4 d-flex justify-content-center">
+                <div class="row flex-wrap d-flex row-gap-4">
+                    <div class="left-side col-12 col-lg-7 p-4 rounded-3 bg-white">
+                        <div class="view d-flex justify-content-between">
+                            <div>
+                                <span><i class="ai-person me-1 bg-light p-1 rounded-circle"></i>ឯកជន</span>
+                            </div>
+                            <div>
+                                <span class="me-1"> <i class="ai-alarm me-1 bg-light p-1 rounded-circle"></i>1
+                                    ឆ្នាំមុន</span>
+                                <span></i><i class="ai-eye-open me-1 bg-light p-1 rounded-circle"></i>768 Views</span>
+                            </div>
+                        </div>
+                        <div class="title">
+                            <h4 class="fw-bold my-3">Luxary Smart Apartment</h4>
+                            <button disabled class="btn btn-outline-primary mt-1 mb-3">Apartment</button>
+                        </div>
+                        <span><i class="ai-location bg-light p-1 me-1 rounded-circle text-warning "></i>ផ្លូវ6A ទួកគោក
+                            រាជធានីភ្នំពេញ</span> <a href="https://maps.app.goo.gl/oNHQdmNsnEt2dGkRA"
+                            class="text-warning" target="_blank">មើលទីតាំង</a>
+                        <h3 class="my-4">180,000$</h3>
+                        <div class="row row-gap-3">
+                            <div class="col-12  col-xl-4">
+                                <span class="bg-light py-1 px-2 rounded-2 me-1"><svg xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 24 24" width="16" height="16" color="#000000" fill="none">
+                                        <path d="M22 17.5H2" stroke="currentColor" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path
+                                            d="M22 21V16C22 14.1144 22 13.1716 21.4142 12.5858C20.8284 12 19.8856 12 18 12H6C4.11438 12 3.17157 12 2.58579 12.5858C2 13.1716 2 14.1144 2 16V21"
+                                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path
+                                            d="M16 12V10.6178C16 10.1103 15.9085 9.94054 15.4396 9.7405C14.4631 9.32389 13.2778 9 12 9C10.7222 9 9.53688 9.32389 8.5604 9.7405C8.09154 9.94054 8 10.1103 8 10.6178L8 12"
+                                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                                        <path
+                                            d="M20 12V7.36057C20 6.66893 20 6.32311 19.8292 5.99653C19.6584 5.66995 19.4151 5.50091 18.9284 5.16283C16.9661 3.79978 14.5772 3 12 3C9.42282 3 7.03391 3.79978 5.07163 5.16283C4.58492 5.50091 4.34157 5.66995 4.17079 5.99653C4 6.32311 4 6.66893 4 7.36057V12"
+                                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                                    </svg>&nbsp;បន្ទប់គេង: 5</span>
+                            </div>
+                            <div class="col-12 col-xl-4">
+                                <span class="bg-light py-1 px-2 rounded-2 me-1"><svg xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 24 24" width="16" height="16" color="#000000" fill="none">
+                                        <path d="M6 20L5 21M18 20L19 21" stroke="currentColor" stroke-width="1.5"
+                                            stroke-linecap="round" />
+                                        <path
+                                            d="M3 12V13C3 16.2998 3 17.9497 4.02513 18.9749C5.05025 20 6.70017 20 10 20H14C17.2998 20 18.9497 20 19.9749 18.9749C21 17.9497 21 16.2998 21 13V12"
+                                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                        <path d="M2 12H22" stroke="currentColor" stroke-width="1.5"
+                                            stroke-linecap="round" />
+                                        <path
+                                            d="M4 12V5.5234C4 4.12977 5.12977 3 6.5234 3C7.64166 3 8.62654 3.73598 8.94339 4.80841L9 5"
+                                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                                        <path d="M8 6L10.5 4" stroke="currentColor" stroke-width="1.5"
+                                            stroke-linecap="round" />
+                                    </svg>&nbsp;បន្ទប់ទឹក: 2</span>
+                            </div>
+                            <div class="col-12 col-xl-4">
+                                <span class="bg-light py-1 px-2 rounded-2"><svg xmlns="http://www.w3.org/2000/svg"
+                                        viewBox="0 0 24 24" width="16" height="16" color="#000000" fill="none">
+                                        <path d="M14.5 9.5H14.509" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path
+                                            d="M14.5 6C16.3941 6 18 7.61319 18 9.57031C18 11.5586 16.368 12.9539 14.8605 13.9027C14.7506 13.9665 14.6264 14 14.5 14C14.3736 14 14.2494 13.9665 14.1395 13.9027C12.6348 12.9446 11 11.5655 11 9.57031C11 7.61319 12.6059 6 14.5 6Z"
+                                            stroke="currentColor" stroke-width="1.5" />
+                                        <path
+                                            d="M2.5 12C2.5 7.52166 2.5 5.28249 3.89124 3.89124C5.28249 2.5 7.52166 2.5 12 2.5C16.4783 2.5 18.7175 2.5 20.1088 3.89124C21.5 5.28249 21.5 7.52166 21.5 12C21.5 16.4783 21.5 18.7175 20.1088 20.1088C18.7175 21.5 16.4783 21.5 12 21.5C7.52166 21.5 5.28249 21.5 3.89124 20.1088C2.5 18.7175 2.5 16.4783 2.5 12Z"
+                                            stroke="currentColor" stroke-width="1.5" />
+                                        <path d="M17 21L3 7" stroke="currentColor" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M10 14L4 20" stroke="currentColor" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>&nbsp;ទំហំដី: 1200ម² </span>
+                            </div>
+                        </div>
+                        <div class="description">
+                            <h5 class="my-3 fw-bold text-black-50">ពិពណ៌នា</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est architecto explicabo
+                                necessitatibus reiciendis eos sunt, maxime assumenda consequuntur quo tempore
+                                accusantium ab
+                                similique voluptate illum tempora quasi neque dignissimos unde!</p>
+                        </div>
+                        <div class="feature">
+                            <h5 class="my-3 fw-bold text-black-50">លក្ខណៈពិសេស</h5>
+                            <div class="row row-gap-3">
+                                <div class="col-12 col-md-6 col-lg-6">
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16"
+                                            height="16" color="#000000" fill="none"
+                                            class="bg-primary text-white rounded-circle">
+                                            <path
+                                                d="M22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12Z"
+                                                stroke="currentColor" stroke-width="1.5" />
+                                            <path d="M8 12.5L10.5 15L16 9" stroke="currentColor" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                        សេវាកម្មជុសជុល
+                                    </span>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-6">
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16"
+                                            height="16" color="#000000" fill="none"
+                                            class="bg-primary text-white rounded-circle">
+                                            <path
+                                                d="M22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12Z"
+                                                stroke="currentColor" stroke-width="1.5" />
+                                            <path d="M8 12.5L10.5 15L16 9" stroke="currentColor" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                        រានហាល
+                                    </span>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-6">
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16"
+                                            height="16" color="#000000" fill="none"
+                                            class="bg-primary text-white rounded-circle">
+                                            <path
+                                                d="M22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12Z"
+                                                stroke="currentColor" stroke-width="1.5" />
+                                            <path d="M8 12.5L10.5 15L16 9" stroke="currentColor" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                        ចំណតឡាន
+                                    </span>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-6">
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16"
+                                            height="16" color="#000000" fill="none"
+                                            class="bg-primary text-white rounded-circle">
+                                            <path
+                                                d="M22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12Z"
+                                                stroke="currentColor" stroke-width="1.5" />
+                                            <path d="M8 12.5L10.5 15L16 9" stroke="currentColor" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                        ប្រព័ន្ទទឹក ភ្លើង
+                                    </span>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-6">
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16"
+                                            height="16" color="#000000" fill="none"
+                                            class="bg-primary text-white rounded-circle">
+                                            <path
+                                                d="M22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12Z"
+                                                stroke="currentColor" stroke-width="1.5" />
+                                            <path d="M8 12.5L10.5 15L16 9" stroke="currentColor" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                        បូមលូ
+                                    </span>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-6">
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16"
+                                            height="16" color="#000000" fill="none"
+                                            class="bg-primary text-white rounded-circle">
+                                            <path
+                                                d="M22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12Z"
+                                                stroke="currentColor" stroke-width="1.5" />
+                                            <path d="M8 12.5L10.5 15L16 9" stroke="currentColor" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                        ដីដាំដំណាំ
+                                    </span>
+                                </div>
+                                <div class="col-12 col-md-6 col-lg-6">
+                                    <span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16"
+                                            height="16" color="#000000" fill="none"
+                                            class="bg-primary text-white rounded-circle">
+                                            <path
+                                                d="M22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22C17.5228 22 22 17.5228 22 12Z"
+                                                stroke="currentColor" stroke-width="1.5" />
+                                            <path d="M8 12.5L10.5 15L16 9" stroke="currentColor" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                        អាងហែលទឹក
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="map">
+                            <h5 class="my-3 fw-bold text-black-50">ទីតាំង</h5>
+                            <iframe class="h-100 w-100"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3908.718605382324!2d104.88750717481736!3d11.572018988629287!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3109519e0c9b2109%3A0x8b8d35d80b920ffc!2sANT%20Technology%20Training%20School!5e0!3m2!1sen!2skh!4v1721960974919!5m2!1sen!2skh"
+                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                        <div class="cululate">
+                            <h5 class="my-3 fw-bold text-black-50">គណនាការបង់ប្រាក់</h5>
+                            <div class="row">
+                                <div class="col-12 col-md-6 home-price">
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text bg-white  px-2" id="basic-addon1">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30"
+                                                height="30" color="#000000" fill="none"
+                                                class=" p-1 bg-warning rounded-2 text-white">
+                                                <circle cx="1.5" cy="1.5" r="1.5"
+                                                    transform="matrix(1 0 0 -1 16 8.00024)" stroke="currentColor"
+                                                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path
+                                                    d="M2.77423 11.1439C1.77108 12.2643 1.7495 13.9546 2.67016 15.1437C4.49711 17.5033 6.49674 19.5029 8.85633 21.3298C10.0454 22.2505 11.7357 22.2289 12.8561 21.2258C15.8979 18.5022 18.6835 15.6559 21.3719 12.5279C21.6377 12.2187 21.8039 11.8397 21.8412 11.4336C22.0062 9.63798 22.3452 4.46467 20.9403 3.05974C19.5353 1.65481 14.362 1.99377 12.5664 2.15876C12.1603 2.19608 11.7813 2.36233 11.472 2.62811C8.34412 5.31646 5.49781 8.10211 2.77423 11.1439Z"
+                                                    stroke="currentColor" stroke-width="1.5" />
+                                                <path d="M7.00002 14.0002L10 17.0002" stroke="currentColor"
+                                                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </span>
+                                        <input type="text" class="form-control py-2 house-price" placeholder="តម្លៃពេញ"
+                                            aria-label="Username" aria-describedby="basic-addon1">
+                                        <span class="input-group-text bg-white" id="basic-addon3">$</span>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 interest">
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text bg-white  px-2" id="basic-addon1">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30"
+                                                height="30" color="#000000" fill="none"
+                                                class="  p-1 bg-warning rounded-2 text-white">
+                                                <path
+                                                    d="M2.46439 9.34375C2.21585 9.34375 1.98905 9.14229 2.00048 8.87895C2.06739 7.33687 2.25487 6.33298 2.78014 5.53884C3.08234 5.08196 3.45771 4.68459 3.88929 4.36468C5.05581 3.5 6.70145 3.5 9.99272 3.5H14.0074C17.2987 3.5 18.9443 3.5 20.1109 4.36468C20.5424 4.68459 20.9178 5.08196 21.22 5.53884C21.7452 6.33289 21.9327 7.33665 21.9996 8.87843C22.0111 9.14208 21.784 9.34375 21.5352 9.34375C20.1494 9.34375 19.026 10.533 19.026 12C19.026 13.467 20.1494 14.6562 21.5352 14.6562C21.784 14.6562 22.0111 14.8579 21.9996 15.1216C21.9327 16.6634 21.7452 17.6671 21.22 18.4612C20.9178 18.918 20.5424 19.3154 20.1109 19.6353C18.9443 20.5 17.2987 20.5 14.0074 20.5H9.99272C6.70145 20.5 5.05581 20.5 3.88929 19.6353C3.45771 19.3154 3.08234 18.918 2.78014 18.4612C2.25487 17.667 2.06739 16.6631 2.00048 15.1211C1.98905 14.8577 2.21585 14.6562 2.46439 14.6562C3.85018 14.6562 4.97358 13.467 4.97358 12C4.97358 10.533 3.85018 9.34375 2.46439 9.34375Z"
+                                                    stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+                                                <path d="M9.50006 14.5L14.5001 9.5" stroke="currentColor"
+                                                    stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M9.50006 9.5H9.51129M14.4888 14.5H14.5001"
+                                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </svg>
+                                        </span>
+
+                                        <input type="text" class="form-control py-2 interest-rate"
+                                            placeholder="ការប្រាក់" aria-label="Username"
+                                            aria-describedby="basic-addon1">
+                                        <span class="input-group-text bg-white" id="basic-addon3">%</span>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 month-qty">
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text bg-white px-2" id="basic-addon1">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30"
+                                                height="30" color="#000000" fill="none"
+                                                class=" p-1 bg-warning rounded-2 text-white">
+                                                <path d="M18 2V4M6 2V4" stroke="currentColor" stroke-width="1.5"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                                <path
+                                                    d="M10 17L9.99999 13.3472C9.99999 13.1555 9.86325 13 9.69458 13H9M13.6297 17L14.9842 13.3492C15.0475 13.1785 14.9128 13 14.7207 13H13"
+                                                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                                                <path
+                                                    d="M2.5 12.2432C2.5 7.88594 2.5 5.70728 3.75212 4.35364C5.00424 3 7.01949 3 11.05 3H12.95C16.9805 3 18.9958 3 20.2479 4.35364C21.5 5.70728 21.5 7.88594 21.5 12.2432V12.7568C21.5 17.1141 21.5 19.2927 20.2479 20.6464C18.9958 22 16.9805 22 12.95 22H11.05C7.01949 22 5.00424 22 3.75212 20.6464C2.5 19.2927 2.5 17.1141 2.5 12.7568V12.2432Z"
+                                                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </svg>
+                                        </span>
+                                        <input type="text" class="form-control py-2 loan-term" placeholder="ចំនួនខែ"
+                                            aria-label="Username" aria-describedby="basic-addon1">
+                                        <span class="input-group-text bg-white" id="basic-addon3">ខែ</span>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6 down-pay">
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text bg-white px-2" id="basic-addon1">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30"
+                                                height="30" color="#000000" fill="none"
+                                                class=" p-1 bg-warning rounded-2 text-white">
+                                                <path
+                                                    d="M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12Z"
+                                                    stroke="currentColor" stroke-width="1.5" />
+                                                <path
+                                                    d="M14.7102 10.0611C14.6111 9.29844 13.7354 8.06622 12.1608 8.06619C10.3312 8.06616 9.56136 9.07946 9.40515 9.58611C9.16145 10.2638 9.21019 11.6571 11.3547 11.809C14.0354 11.999 15.1093 12.3154 14.9727 13.956C14.836 15.5965 13.3417 15.951 12.1608 15.9129C10.9798 15.875 9.04764 15.3325 8.97266 13.8733M11.9734 6.99805V8.06982M11.9734 15.9031V16.998"
+                                                    stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                                            </svg>
+                                        </span>
+                                        <input type="text" class="form-control py-2 down-payment"
+                                            placeholder="ប្រាក់កក់" aria-label="Username"
+                                            aria-describedby="basic-addon1">
+                                        <span class="input-group-text bg-white" id="basic-addon3">$</span>
+                                    </div>
+                                </div>
+
+                                <div class="col-12 col-md-4 monthly-pay">
+                                    <label for="exampleFormControlInput1 w-100"
+                                        class="form-label">ប្រាក់បង់ប្រចាំខែ</label>
+                                    <div class="input-group mb-3">
+                                        <input type="text" class="form-control py-2 monthly-payment py-2 bg-light"
+                                            aria-label="Username" aria-describedby="basic-addon1" disabled>
+                                        <span class="input-group-text bg-light" id="basic-addon1">$</span>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-4  total-interest">
+                                    <label for="exampleFormControlInput1 w-100" class="form-label">ការប្រាក់សរុប</label>
+                                    <div class="input-group mb-3">
+                                        <input type="text" class="form-control py-2 total-interest-amount py-2 bg-light"
+                                            aria-label="Username" aria-describedby="basic-addon1" disabled>
+                                        <span class="input-group-text bg-light" id="basic-addon2">$</span>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-4  total-money">
+                                    <label for="exampleFormControlInput1 w-100" class="form-label">ប្រាក់បង់សរុប</label>
+                                    <div class="input-group mb-3">
+                                        <input type="text" class="form-control py-2 total-amount py-2 bg-light"
+                                            aria-label="Username" aria-describedby="basic-addon1" disabled>
+                                        <span class="input-group-text bg-light" id="basic-addon3">$</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="review">
+                            <h5 class="my-3 fw-bold text-black-50">ការយល់ឃើញ</h5>
+                            <div class="d-flex align-items-center">
+                                <img src="asset/image/no-profile.png" alt="" style="width: 40px;"
+                                    class="rounded-circle">
+                                <span class="rate ms-2 align-middle">
+                                    <img src="asset/image/star-solid.svg" alt="" width="18" height="18">
+                                    <img src="asset/image/star-solid.svg" alt="" width="18" height="18">
+                                    <img src="asset/image/star-solid.svg" alt="" width="18" height="18">
+                                    <img src="asset/image/star-solid.svg" alt="" width="18" height="18">
+                                    <img src="asset/image/star-regular.svg" alt="" width="18" height="18">
+                                </span>
+                            </div>
+                            <div class="my-3">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <img src="asset/image/review1.jpg" alt="" class="w-100">
+                                    </div>
+                                    <div class="col-6">
+                                        <img src="asset/image/detail-1.jpg" alt="" class="w-100">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="my-3">
+                                <p><img src="asset/image/clock-01-stroke-rounded.svg" alt=""> ១សប្ដាហ៍មុន</p>
+                                <span>ខ្ញុំបានទៅមើលផ្ទះនេះរួចហើយពិតជាស្រស់ស្អាតប៉ុន្តែខ្ញុំមិនទាន់ចង់ទិញនៅឡើយទេ
+                                    💗😍ប្រសិនបើអ្នកមានលុយគ្រប់គ្រាន់ខ្ញុំណែនាំកុំអោយមើលរំលងផ្ទះមួយនេះអោយសោះ🤗</span>
+                            </div>
+                            <h6 class="my-3 fw-bold text-black-50">បង្កើតការវាយតម្លៃ</h6>
+                            <div class="d-flex align-items-center">
+                                <img src="asset/image/user-profile.jpg" alt="" style="width: 40px;"
+                                    class="rounded-circle">
+                                <span class="rate ms-2">
+                                    វាយតម្លៃៈ
+                                    <a href="#"><img src="asset/image/star-regular.svg" alt="" width="18"
+                                            height="18"></a>
+                                    <a href="#"><img src="asset/image/star-regular.svg" alt="" width="18"
+                                            height="18"></a>
+                                    <a href="#"><img src="asset/image/star-regular.svg" alt="" width="18"
+                                            height="18"></a>
+                                    <a href="#"><img src="asset/image/star-regular.svg" alt="" width="18"
+                                            height="18"></a>
+                                    <a href="#"><img src="asset/image/star-regular.svg" alt="" width="18"
+                                            height="18"></a>
+                                </span>
+                            </div>
+                            <div class="my-3">
+                                <a href="#" id="uploadLink" class="text-primary">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20"
+                                        color="#537cd9" fill="none">
+                                        <path
+                                            d="M19.5 12.0001V13.5001C19.5 17.6422 16.1421 21.0001 12 21.0001C7.85786 21.0001 4.5 17.6422 4.5 13.5001V8C4.5 5.23858 6.73858 3 9.5 3C12.2614 3 14.5 5.23858 14.5 8V13.5C14.5 14.8807 13.3807 16 12 16C10.6193 16 9.5 14.8807 9.5 13.5V9.5"
+                                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg> បញ្ចូលរូបភាព
+                                </a>
+                                <input type="file" id="fileInput" style="display:none;" accept="image/*" />
+                                <div id="fileInfo" style="margin-top: 10px;"></div>
+                            </div>
+                            <div class="my-3 d-flex flex-wrap justify-content-end">
+                                <div class="form-floating w-100">
+                                    <textarea class="form-control" placeholder="Leave a comment here"
+                                        id="floatingTextarea2" style="height:200px"></textarea>
+                                    <label for="floatingTextarea2">បញ្ចេញមតិរបស់អ្នកនៅទីនេះ</label>
+                                </div>
+                                <button type="button" class="btn btn-primary mt-3"
+                                    id="liveToastBtn">បង្ហោះឥឡូវនេះ</button>
+                                <div class="toast-container position-fixed bottom-0 end-0 p-3">
+                                    <div id="liveToast" class="toast" role="alert" aria-live="assertive"
+                                        aria-atomic="true">
+                                        <div class="toast-header">
+                                            <img src="asset/image/user-profile.jpg" class="rounded-circle me-2" alt="..." style="width: 20px;">
+                                            <strong class="me-auto">Bootstrap</strong>
+                                            <small>11 mins ago</small>
+                                            <button type="button" class="btn-close" data-bs-dismiss="toast"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="toast-body">
+                                           អ្នកបានបង្ហោះការផ្ដល់មតិជោគជ័យ!
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right-side col-12 col-lg-5 px-0 px-lg-4">
+                        <div class="card p-4">
+                            <div class="row position-relative">
+                                <div class="col-3 d-flex justify-content-center">
+                                    <div class="seller-profile">
+                                        <a href="#" class="stretched-link"><img src="asset/image/user-profile.jpg"
+                                                alt="" class="w-100 rounded-circle"></a>
+                                    </div>
+                                </div>
+                                <div class="col-9">
+                                    <h5>អូន គីមហុង</h5>
+                                    <span>ចូលជាអាជីវករ : ៣ឆ្នាំ</span><br>
+                                    <span>គណនី : ឯកជន</span><br>
+                                    <span class="active-note"><i
+                                            class="ai-circle-fill"></i>&nbsp;អ្នកកំពុងមានសកម្មភាព!</span><br>
+                                    <div class="my-2">
+                                        <a href="https://maps.app.goo.gl/oNHQdmNsnEt2dGkRA" class="text-black">
+                                            <i
+                                                class="ai-location bg-warning location me-1 rounded-circle text-white"></i>
+                                            ផ្លូវA សែនសុខ ភ្នំពេញ
+                                        </a>
+                                    </div>
+                                    <a href="#" class="text-primary">មើលផ្ទះទាំងអស់</a>
+                                </div>
+                            </div>
+                            <div class="w-100 p-3 my-2 bg-light d-flex justify-content-between">
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30"
+                                        color="#000000" fill="none" class="bg-white rounded-circle p-2">
+                                        <path
+                                            d="M5 9C5 5.70017 5 4.05025 6.02513 3.02513C7.05025 2 8.70017 2 12 2C15.2998 2 16.9497 2 17.9749 3.02513C19 4.05025 19 5.70017 19 9V15C19 18.2998 19 19.9497 17.9749 20.9749C16.9497 22 15.2998 22 12 22C8.70017 22 7.05025 22 6.02513 20.9749C5 19.9497 5 18.2998 5 15V9Z"
+                                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" />
+                                        <path d="M11 19H13" stroke="currentColor" stroke-width="1.5"
+                                            stroke-linecap="round" stroke-linejoin="round" />
+                                        <path
+                                            d="M9 2L9.089 2.53402C9.28188 3.69129 9.37832 4.26993 9.77519 4.62204C10.1892 4.98934 10.7761 5 12 5C13.2239 5 13.8108 4.98934 14.2248 4.62204C14.6217 4.26993 14.7181 3.69129 14.911 2.53402L15 2"
+                                            stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+                                    </svg>
+                                    071983<span class="text-warning hide">XXXX</span>
+                                </span>
+                                <span class="eye">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30"
+                                        color="#000000" fill="none" class="bg-warning text-white rounded-circle p-2">
+                                        <path
+                                            d="M21.544 11.045C21.848 11.4713 22 11.6845 22 12C22 12.3155 21.848 12.5287 21.544 12.955C20.1779 14.8706 16.6892 19 12 19C7.31078 19 3.8221 14.8706 2.45604 12.955C2.15201 12.5287 2 12.3155 2 12C2 11.6845 2.15201 11.4713 2.45604 11.045C3.8221 9.12944 7.31078 5 12 5C16.6892 5 20.1779 9.12944 21.544 11.045Z"
+                                            stroke="currentColor" stroke-width="1.5" />
+                                        <path
+                                            d="M15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12C9 13.6569 10.3431 15 12 15C13.6569 15 15 13.6569 15 12Z"
+                                            stroke="currentColor" stroke-width="1.5" />
+                                    </svg>
+                                </span>
+                            </div>
+                            <div class="col-12 d-flex column-gap-3 mt-3">
+                                <button type="button" class="btn btn-primary w-50">ផ្ញើសារ</button>
+                                <button type="button" class="btn btn-primary w-50">ទំនាក់ទំនងភ្នាក់ងារ</button>
+                            </div>
+
+                        </div>
+                        <!-- <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                                aria-labelledby="pills-home-tab" tabindex="0">
+                                <div class="card mt-4">
+                                    <div class="card-header p-4 bg-white">
+                                        <span class="text-black-50 fs-4 fw-bold"> ផ្ទះដែលបានបង្ហោះលក់</span>
+                                        <span class="badge text-bg-primary text-white ms-2">1</span>
+                                    </div>
+                                    <div class="card-body p-4">
+                                        <img src="asset/image/columbia-town-center-columbia-md.jpg" alt=""
+                                            class="w-100 rounded-2">
+                                        <h5 class="fw-bold my-3">ផ្ទះលើផ្លូវធំ តម្លៃល្អ</h5>
+                                        <a><i
+                                                class="ai-location bg-light p-1 me-1 rounded-circle text-warning "></i>ផ្លូវ6A
+                                            ទួកគោក
+                                            រាជធានីភ្នំពេញ</a>
+                                        <h5 class="fs-4 mt-3">12000$</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                                aria-labelledby="pills-profile-tab" tabindex="0">
+                                <div class="card mt-3">
+                                    <div class="card-header p-4 bg-white">
+                                        <span class="text-black-50 fs-4 fw-bold"> ផ្ទះដែលបានបង្ហោះលក់</span>
+                                        <span class="badge text-bg-primary text-white ms-2">2</span>
+                                    </div>
+                                    <div class="card-body p-4">
+                                        <img src="asset/image/HD-wallpaper-beautiful-house-house-relax-home-beautiful-sky-blue.jpg"
+                                            alt="" class="w-100 rounded-2">
+                                        <h5 class="fw-bold my-3">ផ្ទះលំហែរ មាត់សមុទ្រ</h5>
+                                        <span><i
+                                                class="ai-location bg-light p-1 me-1 rounded-circle text-warning "></i>ផ្លូវ6A
+                                            ទួកគោក
+                                            រាជធានីភ្នំពេញ</span>
+                                        <h5 class="fs-4 mt-3">13990$</h5>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-light px-4 py-3 d-flex justify-content-end">
+                            <ul class="nav nav-pills " id="pills-tab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                                        aria-selected="true">1</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-profile" type="button" role="tab"
+                                        aria-controls="pills-profile" aria-selected="false">2</button>
+                                </li>
+                            </ul>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="asset/js/bootstrap.bundle.min.js"></script>
+    <script src="asset/js/akaricon.js"></script>
+    <script src="asset/js/tom-select.complete.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/lightgallery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/plugins/zoom/lg-zoom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/plugins/share/lg-share.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.7.2/plugins/fullscreen/lg-fullscreen.min.js"></script>
+    <script type="text/javascript">
+        lightGallery(document.getElementById('lightgallery1'), {
+            plugins: [lgZoom, lgFullscreen, lgShare],
+            licenseKey: 'your_license_key',
+            speed: 500,
+            // ... other settings
+
+        });
+        lightGallery(document.getElementById('lightgallery2'), {
+            plugins: [lgZoom, lgFullscreen, lgShare],
+            licenseKey: 'your_license_key',
+            speed: 500,
+            // ... other settings
+
+        });
+
+        const housePrice = document.querySelector('.house-price');
+        const interestRate = document.querySelector('.interest-rate');
+        const loanTerm = document.querySelector('.loan-term');
+        const downPayment = document.querySelector('.down-payment');
+        const monthlyPayment = document.querySelector('.monthly-payment');
+        const totalInterest = document.querySelector('.total-interest-amount');
+        const totalAmount = document.querySelector('.total-amount');
+
+        function calculateLoanDetails() {
+            const price = parseFloat(housePrice.value) || 0;
+            const rate = parseFloat(interestRate.value) || 0;
+            const term = parseFloat(loanTerm.value) || 0;
+            const downPay = parseFloat(downPayment.value) || 0;
+
+            const principal = price - downPay;
+            const monthlyRate = rate / 1200;
+            const numPayments = term * 12;
+
+            const monthlyPay = (principal * monthlyRate) / (1 - Math.pow(1 + monthlyRate, -numPayments));
+            const totalInt = (monthlyPay * numPayments) - principal;
+            const totalMoney = principal + totalInt;
+
+            monthlyPayment.value = monthlyPay.toFixed(2);
+            totalInterest.value = totalInt.toFixed(2);
+            totalAmount.value = totalMoney.toFixed(2);
+        }
+
+        housePrice.addEventListener('input', calculateLoanDetails);
+        interestRate.addEventListener('input', calculateLoanDetails);
+        loanTerm.addEventListener('input', calculateLoanDetails);
+        downPayment.addEventListener('input', calculateLoanDetails);
+
+        //upload img
+        const uploadLink = document.getElementById('uploadLink');
+        const fileInput = document.getElementById('fileInput');
+        const fileInfo = document.getElementById('fileInfo');
+
+        uploadLink.addEventListener('click', (event) => {
+            event.preventDefault();
+            fileInput.click();
+        });
+
+        fileInput.addEventListener('change', (event) => {
+            const selectedFile = event.target.files[0];
+            if (selectedFile) {
+                fileInfo.textContent = `រូបភាព: ${selectedFile.name}`;
+            } else {
+                fileInfo.textContent = '';
+            }
+        });
+
+        const hiddenText = document.querySelector('.text-warning.hide');
+        const eyeButton = document.querySelector('.eye');
+
+        eyeButton.addEventListener('click', () => {
+            if (hiddenText.textContent === 'XXXX') {
+                hiddenText.textContent = '4433';
+            } else {
+                hiddenText.textContent = 'XXXX';
+            }
+        });
+
+        const toastTrigger = document.getElementById('liveToastBtn')
+        const toastLiveExample = document.getElementById('liveToast')
+
+        if (toastTrigger) {
+            const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample)
+            toastTrigger.addEventListener('click', () => {
+                toastBootstrap.show()
+            })
+        }
+    </script>
+</body>
+
+</html>

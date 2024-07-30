@@ -1,158 +1,201 @@
 @font-face {
     font-family: Kantumruy;
-    src: url(/asset/plugin/font/KantumruyPro-VariableFont_wght.ttf);
+    src: url(../plugin/font/KantumruyPro-VariableFont_wght.ttf);
 }
 
 body {
     font-family: Kantumruy, sans-serif;
-    background: #ffffff;
 }
 
 input,
 textarea,
 button {
     font-family: Kantumruy, sans-serif;
-    ;
 }
 
 a {
     text-decoration: none;
 }
+input,
+textarea,
+button {
+    font-family: Kantumruy, sans-serif;
+}
 
-/* =========== header ========== */
-.navbar .social-icon .navbar-nav .nav-item .nav-link svg {
-    border: 1px solid #000;
+textarea {
+    resize: none;
+}
+
+
+.user-page .hero-banner {
+    width: 100%;
+    height: 300px;
+    background-image: url(../image/user-hero.png);
+    background-size: cover;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    background-position: bottom;
+    padding-top: 175px;
+}
+
+.user-page .user-profile {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.user-page .user-profile .image {
+    width: 250px;
+    border: 8px solid #fff;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.user-page .user-profile .image img {
+    width: 100%;
+    transform: scale(1.1);
+}
+
+.user-page .profile {
+    width: 100%;
+}
+
+.user-page .user-info {
+    width: 700px;
+}
+
+.user-page .user-info a {
     color: #000;
-    border-radius: 50%;
+}
+
+.user-page .user-info .user-social svg {
+    border: 1px solid #8e8e8e;
+    color: #8e8e8e;
+    padding: 8px;
+    border-radius: 20px;
+    margin-inline: 5px;
     transition: 0.4s;
 }
 
-.navbar .social-icon .navbar-nav .nav-item .nav-link:hover svg {
-    border: 1px solid #fff;
+.user-page .user-info .user-social svg:hover {
+    background-color: #f09965;
+    border: 1px solid #f09965;
+    color: #fff;
+}
+
+.user-info .row .col-12 .icon {
+    padding: 6px 7px;
+    border: 1px solid #f09965;
+    color: #f09965;
+}
+
+.user-page .send-sms {
+    width: 100%;
+    background-color: #f2f4f8;
+    background-image: url(/asset/image/Untitled-2.jpg);
+}
+
+.user-page .send-sms .message {
+    width: 70%;
+}
+
+.user-page .seller-listing svg {
+    color: #000;
+}
+
+.user-page .seller-listing .col-3 {
+    height: 100px;
+    background-color: red;
+}
+
+.user-page .overlay {
+    width: 250px;
+    height: 250px;
+    background-color: #28262590;
+    bottom: -110%;
+    transition: 0.7s;
+}
+
+.user-page .overlay svg {
+    border: 2px solid #fff;
+    color: #fff;
+    padding: 10px;
+    transform: translateX(-4px);
+    transition: 0.5s;
+}
+
+.user-page .overlay a:hover svg {
     background-color: #fff;
-    color: #f2a87c;
+    color: #f09965;
 }
 
-.navbar .navbar-nav .nav-item .nav-link {
-    font-size: 20px;
-    color: #222222;
+.user-page .user-profile .image:hover .overlay {
+    bottom: -10px;
 }
 
-.navbar .offcanvas-body form button {
-    font-size: 20px;
-
+.user-page .badge {
+    transform: translateY(-5px);
 }
 
-.navbar .offcanvas-body form .btn-outline-warning:hover {
-    color: #ffffff;
+.blog-page .hero-banner {
+    width: 100%;
+    height: 220px;
+    background-image: url(../image/beautiful-house-x1yu28g8twzle26l.jpg);
+    background-size: cover;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    background-position: top;
 }
 
-.navbar .offcanvas-body form .btn-warning {
-    color: #ffffff;
+.user-page .card,
+.detail-page .card,
+.blog-content .card,
+.blog-page .card{
+    border: none;
+    box-shadow: 0px 0px 35px -3px rgba(0, 0, 0, 0.05);
 }
 
 
-
-
-
-
-
-
-/* laptop  */
-@media (max-width: 1199px) {
-    .navbar .navbar-nav .nav-item .nav-link {
-        font-size: 18px;
-        color: #222222;
-    }
-
-    .navbar .offcanvas-body form button {
-        font-size: 18px;
-
-    }
-
-}
-/* tablets */
-@media (min-width: 992px) {
-    .navbar .navbar-nav .nav-item .nav-link[data-bs-toggle="collapse"] {
-        display: none !important;
-    }
-
-    .navbar .offcanvas .dropdown:hover .dropdown-menu {
-        display: block !important;
-    }
-
-    .navbar .offcanvas .dropdown .dropdown-menu {
-        width: 240px;
-        position: absolute;
-        top: 69px;
-        border: 1px solid #eee;
-        padding-block: 0;
-
-    }
-
-    .navbar .offcanvas .dropdown:hover::before {
-        content: '';
-        position: absolute;
-        background-color: transparent;
-        width: 240px;
-        height: 60px;
-        top: 15px;
-    }
-
-    .navbar .offcanvas .dropdown .dropdown-menu li .dropdown-item {
-        font-size: 18px;
-        padding-left: 20px;
-        padding-block: 10px;
-    }
-
-    .navbar .offcanvas .dropdown svg {
-        transition: 0.2s;
-    }
-
-    .navbar .offcanvas .dropdown:hover svg {
-        transform: rotate(180deg);
-    }
-
-    .navbar .offcanvas-body .navbar-nav .nav-item {
-        padding-inline: 20px;
-    }
-
-
+.agent-profile img {
+    width: 30px;
 }
 
-@media (max-width: 991px) {
-    .navbar .offcanvas .dropdown .dropdown-menu {
-        display: none;
-    }
+.blog-content .calendar svg {
+    color: #f09965;
+    border: 1px solid #f09965;
+    padding: 4px 4px;
+}
 
-    .navbar .offcanvas .dropdown .dropdown-menu {
-        display: none;
-    }
+.blog-content .number {
+    width: 25px;
+    height: 26px;
+}
 
-    .navbar .offcanvas-body .navbar-nav .nav-item {
-        padding-left: 20px;
+.subscribe-content {
+    background-image: url(../image/photo-1534237710431-e2fc698436d0.jpg);
+    background-size: cover;
+    background-position: top;
+}
 
-    }
+.sub-btn,
+.subscribe-content .input-group {
+    border-top-right-radius: 80px;
+    border-bottom-right-radius: 80px;
+}
 
-    .navbar .offcanvas-body form {
-        padding-inline: 20px;
+.detail-promote {
+    width: 100%;
+    height: 200px;
+    background: linear-gradient(0deg, rgba(40, 39, 39, 0.643) 20%, rgba(255, 255, 255, 0) 100%);
+    bottom: -112%;
+    transition: 1s;
+}
 
-    }
+.right-side .card:hover .detail-promote {
+    bottom: -10px;
+}
 
-    .navbar .offcanvas-body .navbar-nav .nav-item .nav-link {
-        padding-inline: 10px;
-    }
-    .navbar .offcanvas-body .navbar-nav > .nav-item .nav-link {
-        margin-block: 7px;
-    }
-    .navbar .offcanvas-body .navbar-nav > .nav-item:hover > .nav-link {
-        background-color: #f2a87c;
-        border-radius: 6px;
-        color: #ffffff;
-    }
-
-    .navbar .offcanvas-body .navbar-nav .nav-item:hover svg {
-        color: #ffffff;
-    }
-   
+.detail-info .row {
+    width: 90%;
 }
